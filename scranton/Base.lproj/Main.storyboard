@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F31a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="scranton" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,265 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scranton1" translatesAutoresizingMaskIntoConstraints="NO" id="ToD-ml-xfB">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="WBb-zH-Ne8">
+                                <rect key="frame" x="11" y="41" width="256" height="185"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="5JV-im-jy0">
+                                        <rect key="frame" x="0.0" y="0.0" width="123" height="66"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="OUTDOOR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jcX-r9-3OD">
+                                                <rect key="frame" x="0.0" y="0.0" width="93" height="22"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ADVENTURES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Au-8G-LBC">
+                                                <rect key="frame" x="0.0" y="22" width="123" height="22"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="NATURE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="skQ-tj-dgD">
+                                                <rect key="frame" x="0.0" y="43" width="78" height="23"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SCRANTON" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XE0-zU-AAk">
+                                        <rect key="frame" x="0.0" y="81" width="256" height="54"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="45"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zpH-E8-RuZ">
+                                        <rect key="frame" x="0.0" y="150" width="182" height="35"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compass" translatesAutoresizingMaskIntoConstraints="NO" id="Myb-US-eED">
+                                                <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PENNSYLVANIA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oa8-uX-Xpe">
+                                                <rect key="frame" x="45" y="0.0" width="137" height="35"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="r8r-N8-r6X">
+                                <rect key="frame" x="215" y="493" width="171" height="82"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPp-FR-wFJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="171" height="36"/>
+                                        <color key="backgroundColor" red="0.17254901959999999" green="0.33725490200000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="171" id="War-Vw-yWN"/>
+                                            <constraint firstAttribute="height" constant="36" id="xpT-7h-w6j"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="GALLERY">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="fXk-BX-PXH" kind="show" id="J9U-3Y-UcJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FA6-26-XU6">
+                                        <rect key="frame" x="0.0" y="46" width="171" height="36"/>
+                                        <color key="backgroundColor" red="0.17254901959999999" green="0.33725490200000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="Jc2-OM-qjc"/>
+                                            <constraint firstAttribute="width" constant="171" id="grO-1g-AbG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="ABOUT SCRANTON">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="xlc-SH-xd7" kind="show" id="Oaz-3a-N4M"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="r8r-N8-r6X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2ZD-gi-e9Q"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ToD-ml-xfB" secondAttribute="bottom" id="5Yd-4T-3ec"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="r8r-N8-r6X" secondAttribute="bottom" constant="25" id="CMB-Zv-dxu"/>
+                            <constraint firstItem="ToD-ml-xfB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="MQ6-yX-zKV"/>
+                            <constraint firstItem="WBb-zH-Ne8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="21" id="cqw-ul-oTd"/>
+                            <constraint firstItem="ToD-ml-xfB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="l3H-Tp-uEG"/>
+                            <constraint firstAttribute="trailing" secondItem="ToD-ml-xfB" secondAttribute="trailing" id="pHk-k8-DhI"/>
+                            <constraint firstItem="WBb-zH-Ne8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="11" id="x9N-Qj-z2M"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="moreBtn" destination="FA6-26-XU6" id="pJs-28-SjR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="304" y="346"/>
+        </scene>
+        <!--DetailVC-->
+        <scene sceneID="WQQ-vs-JZf">
+            <objects>
+                <viewController id="xlc-SH-xd7" customClass="DetailVC" customModule="scranton" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3dG-hJ-uXA"/>
+                        <viewControllerLayoutGuide type="bottom" id="w3j-MS-ztk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rSf-cn-3DU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scrantoncity" translatesAutoresizingMaskIntoConstraints="NO" id="P7d-cr-pdv">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="155"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="155" id="6w7-HL-q2r"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABOUT SCRANTON" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l4c-0r-EN8">
+                                <rect key="frame" x="194" y="55" width="212" height="45"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.35550480769230769" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="212" id="gKD-gM-7Y7"/>
+                                    <constraint firstAttribute="height" constant="45" id="kga-IP-H45"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FHY-sj-a8l">
+                                <rect key="frame" x="34" y="195" width="560" height="385"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="D3l-uH-k4Q">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="75"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="POPULATION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t9X-b4-DTA">
+                                                <rect key="frame" x="0.0" y="0.0" width="560" height="55"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" red="0.5946544757244242" green="0.55974648598256815" blue="0.65872916666666659" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="76,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJJ-KG-m9a">
+                                                <rect key="frame" x="0.0" y="55" width="560" height="20"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" red="0.59465447569999996" green="0.55974648599999999" blue="0.65872916670000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Cd1-bQ-t1x">
+                                        <rect key="frame" x="0.0" y="85" width="560" height="301"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="HISTORY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dy0-7i-x2m">
+                                                <rect key="frame" x="0.0" y="0.0" width="76" height="162"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" red="0.59465447569999996" green="0.55974648599999999" blue="0.65872916670000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUp-Yf-SEF">
+                                                <rect key="frame" x="0.0" y="162" width="560" height="139"/>
+                                                <string key="text">Scranton is the sixth-largest city in the Commonwealth of Pennsylvania behind Philadelphia, Pittsburgh, Allentown, Erie and Reading. It is the county seat of Lackawanna County in the state's northeastern region and is also the central point for the federal court of the area. With a population of 76,089, it is the largest city in the Scranton–Wilkes-Barre–Hazleton, PA Metropolitan Statistical Area, with a greater population of about 570,000,also known as the Wyoming Valley.</string>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" red="0.59465447569999996" green="0.55974648599999999" blue="0.65872916670000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Mh-Eu-571">
+                                <rect key="frame" x="14" y="20" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.32947115384615383" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backPressed:" destination="xlc-SH-xd7" eventType="touchUpInside" id="lqr-CG-hfD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7Mh-Eu-571" firstAttribute="leading" secondItem="rSf-cn-3DU" secondAttribute="leadingMargin" constant="-6" id="Lvg-Mh-5Cr"/>
+                            <constraint firstItem="w3j-MS-ztk" firstAttribute="top" secondItem="FHY-sj-a8l" secondAttribute="bottom" constant="20" id="Mld-Up-3zt"/>
+                            <constraint firstItem="7Mh-Eu-571" firstAttribute="top" secondItem="3dG-hJ-uXA" secondAttribute="bottom" id="QY4-pJ-Zse"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FHY-sj-a8l" secondAttribute="trailing" id="VfI-8t-69P"/>
+                            <constraint firstAttribute="trailing" secondItem="P7d-cr-pdv" secondAttribute="trailing" id="bai-DD-jrl"/>
+                            <constraint firstItem="FHY-sj-a8l" firstAttribute="top" secondItem="P7d-cr-pdv" secondAttribute="bottom" constant="40" id="bx6-Wb-F7Z"/>
+                            <constraint firstItem="FHY-sj-a8l" firstAttribute="leading" secondItem="rSf-cn-3DU" secondAttribute="leadingMargin" id="cgn-8i-Itp"/>
+                            <constraint firstItem="P7d-cr-pdv" firstAttribute="leading" secondItem="rSf-cn-3DU" secondAttribute="leading" id="eAd-i7-AxI"/>
+                            <constraint firstItem="P7d-cr-pdv" firstAttribute="top" secondItem="rSf-cn-3DU" secondAttribute="top" id="gdn-2s-nNE"/>
+                            <constraint firstItem="l4c-0r-EN8" firstAttribute="top" secondItem="3dG-hJ-uXA" secondAttribute="bottom" constant="35" id="tf7-Xp-C11"/>
+                            <constraint firstItem="l4c-0r-EN8" firstAttribute="centerX" secondItem="rSf-cn-3DU" secondAttribute="centerX" id="wz7-lU-AQg"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3j4-Zi-y8e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1017" y="146"/>
+        </scene>
+        <!--GalleryVC-->
+        <scene sceneID="huX-yu-5bK">
+            <objects>
+                <viewController id="fXk-BX-PXH" customClass="GalleryVC" customModule="scranton" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tOg-yP-gME"/>
+                        <viewControllerLayoutGuide type="bottom" id="4A3-Pd-0ny"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NBg-c5-icr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1uO-FL-eGC">
+                                <rect key="frame" x="11" y="20" width="47" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.32721153846153844" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="64A-zG-Pu8"/>
+                                    <constraint firstAttribute="width" constant="47" id="J8L-Zf-zVg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="galleryBack:" destination="fXk-BX-PXH" eventType="touchUpInside" id="muN-MX-0gc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="GALLERY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3yI-Z2-jbs">
+                                <rect key="frame" x="239" y="20" width="123" height="41"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.33484374999999994" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="123" id="6rh-fP-l1a"/>
+                                    <constraint firstAttribute="height" constant="41" id="JgC-6X-8gn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.17254901959999999" green="0.33725490200000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lEZ-3f-p4b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="966" y="798"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="compass" width="35" height="35"/>
+        <image name="scranton1" width="1024" height="771"/>
+        <image name="scrantoncity" width="490" height="295"/>
+    </resources>
 </document>

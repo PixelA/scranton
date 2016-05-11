@@ -15,6 +15,8 @@
 		A98276D11CE247DB00E0EB1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A98276CF1CE247DB00E0EB1B /* LaunchScreen.storyboard */; };
 		A98276DC1CE247DB00E0EB1B /* scrantonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98276DB1CE247DB00E0EB1B /* scrantonTests.swift */; };
 		A98276E71CE247DB00E0EB1B /* scrantonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98276E61CE247DB00E0EB1B /* scrantonUITests.swift */; };
+		A98276F51CE293DA00E0EB1B /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98276F41CE293DA00E0EB1B /* DetailVC.swift */; };
+		A98276F71CE29FB700E0EB1B /* GalleryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98276F61CE29FB700E0EB1B /* GalleryVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		A98276E21CE247DB00E0EB1B /* scrantonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = scrantonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A98276E61CE247DB00E0EB1B /* scrantonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scrantonUITests.swift; sourceTree = "<group>"; };
 		A98276E81CE247DB00E0EB1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A98276F41CE293DA00E0EB1B /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		A98276F61CE29FB700E0EB1B /* GalleryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +106,12 @@
 				A98276C31CE247DB00E0EB1B /* AppDelegate.swift */,
 				A98276C51CE247DB00E0EB1B /* ViewController.swift */,
 				A98276C71CE247DB00E0EB1B /* Main.storyboard */,
+				A98276F61CE29FB700E0EB1B /* GalleryVC.swift */,
 				A98276CD1CE247DB00E0EB1B /* Assets.xcassets */,
 				A98276CF1CE247DB00E0EB1B /* LaunchScreen.storyboard */,
 				A98276D21CE247DB00E0EB1B /* Info.plist */,
 				A98276CA1CE247DB00E0EB1B /* scranton.xcdatamodeld */,
+				A98276F41CE293DA00E0EB1B /* DetailVC.swift */,
 			);
 			path = scranton;
 			sourceTree = "<group>";
@@ -260,6 +266,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A98276CC1CE247DB00E0EB1B /* scranton.xcdatamodeld in Sources */,
+				A98276F71CE29FB700E0EB1B /* GalleryVC.swift in Sources */,
+				A98276F51CE293DA00E0EB1B /* DetailVC.swift in Sources */,
 				A98276C61CE247DB00E0EB1B /* ViewController.swift in Sources */,
 				A98276C41CE247DB00E0EB1B /* AppDelegate.swift in Sources */,
 			);
